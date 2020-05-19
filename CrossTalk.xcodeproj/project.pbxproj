@@ -13,6 +13,13 @@
 		900F597C2474220F00CCD07C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 900F597B2474220F00CCD07C /* Assets.xcassets */; };
 		900F597F2474220F00CCD07C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 900F597E2474220F00CCD07C /* Preview Assets.xcassets */; };
 		900F59822474220F00CCD07C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 900F59802474220F00CCD07C /* LaunchScreen.storyboard */; };
+		900F598F2474229400CCD07C /* DateFormatter+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900F598E2474229400CCD07C /* DateFormatter+.swift */; };
+		900F5991247422EF00CCD07C /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900F5990247422EF00CCD07C /* Message.swift */; };
+		900F59932474234100CCD07C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900F59922474234100CCD07C /* User.swift */; };
+		900F59952474239E00CCD07C /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900F59942474239E00CCD07C /* ChatViewModel.swift */; };
+		906C21AB24746AB800908A37 /* ChatScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906C21AA24746AB800908A37 /* ChatScrollView.swift */; };
+		906C21AD24746AD800908A37 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906C21AC24746AD800908A37 /* MessageView.swift */; };
+		906C21AF24746BA100908A37 /* ToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906C21AE24746BA100908A37 /* ToolbarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		900F597E2474220F00CCD07C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		900F59812474220F00CCD07C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		900F59832474220F00CCD07C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		900F598E2474229400CCD07C /* DateFormatter+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+.swift"; sourceTree = "<group>"; };
+		900F5990247422EF00CCD07C /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		900F59922474234100CCD07C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		900F59942474239E00CCD07C /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		906C21AA24746AB800908A37 /* ChatScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatScrollView.swift; sourceTree = "<group>"; };
+		906C21AC24746AD800908A37 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		906C21AE24746BA100908A37 /* ToolbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +70,11 @@
 		900F59742474220C00CCD07C /* CrossTalk */ = {
 			isa = PBXGroup;
 			children = (
-				900F59752474220C00CCD07C /* AppDelegate.swift */,
-				900F59772474220C00CCD07C /* SceneDelegate.swift */,
-				900F59792474220C00CCD07C /* ContentView.swift */,
-				900F597B2474220F00CCD07C /* Assets.xcassets */,
-				900F59802474220F00CCD07C /* LaunchScreen.storyboard */,
-				900F59832474220F00CCD07C /* Info.plist */,
+				900F598A2474223A00CCD07C /* App */,
+				900F598D2474224D00CCD07C /* ViewModels */,
+				900F598B2474224200CCD07C /* Models */,
+				900F598C2474224600CCD07C /* Views */,
+				900F59892474222300CCD07C /* Supporting Files */,
 				900F597D2474220F00CCD07C /* Preview Content */,
 			);
 			path = CrossTalk;
@@ -73,6 +86,54 @@
 				900F597E2474220F00CCD07C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		900F59892474222300CCD07C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				900F597B2474220F00CCD07C /* Assets.xcassets */,
+				900F59802474220F00CCD07C /* LaunchScreen.storyboard */,
+				900F59832474220F00CCD07C /* Info.plist */,
+				900F598E2474229400CCD07C /* DateFormatter+.swift */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		900F598A2474223A00CCD07C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				900F59752474220C00CCD07C /* AppDelegate.swift */,
+				900F59772474220C00CCD07C /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		900F598B2474224200CCD07C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				900F5990247422EF00CCD07C /* Message.swift */,
+				900F59922474234100CCD07C /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		900F598C2474224600CCD07C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				900F59792474220C00CCD07C /* ContentView.swift */,
+				906C21AA24746AB800908A37 /* ChatScrollView.swift */,
+				906C21AC24746AD800908A37 /* MessageView.swift */,
+				906C21AE24746BA100908A37 /* ToolbarView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		900F598D2474224D00CCD07C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				900F59942474239E00CCD07C /* ChatViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,7 +207,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				900F598F2474229400CCD07C /* DateFormatter+.swift in Sources */,
+				906C21AB24746AB800908A37 /* ChatScrollView.swift in Sources */,
+				900F59952474239E00CCD07C /* ChatViewModel.swift in Sources */,
+				906C21AD24746AD800908A37 /* MessageView.swift in Sources */,
 				900F59762474220C00CCD07C /* AppDelegate.swift in Sources */,
+				900F59932474234100CCD07C /* User.swift in Sources */,
+				906C21AF24746BA100908A37 /* ToolbarView.swift in Sources */,
+				900F5991247422EF00CCD07C /* Message.swift in Sources */,
 				900F59782474220C00CCD07C /* SceneDelegate.swift in Sources */,
 				900F597A2474220C00CCD07C /* ContentView.swift in Sources */,
 			);
